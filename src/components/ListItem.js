@@ -10,7 +10,7 @@ function ListItem(props) {
                         <input onChange={() => { props.onUpdateDone(props.item) }} type='checkbox'></input>
                         <span className="check"></span>
                     </label>
-                    <img onClick={() => { props.onDeletedItem(props.item) }} src="./assets/icons8-lixo.svg"></img>
+                    <img alt="deletar item" onClick={() => { props.onDeletedItem(props.item) }} src="./assets/icons8-lixo.svg"></img>
                 </div>
             </Card>
         </li>

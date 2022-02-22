@@ -26,7 +26,7 @@ function Todo() {
     }
     function onUpdateDone(item){
         let updateItemsDone = items.map(it => {
-            if(it.id == item.id){
+            if(it.id === item.id){
                 if(it.done){
                     it.done = false
                 }else{
@@ -38,7 +38,7 @@ function Todo() {
         setItems(updateItemsDone)
     }
     function onDeletedItem(item){
-        let updateItems = items.filter(it => {return it.id != item.id})
+        let updateItems = items.filter(it => {return it.id !== item.id})
 
         setItems(updateItems)
     }

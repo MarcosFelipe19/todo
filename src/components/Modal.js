@@ -3,7 +3,7 @@ import Card from "./Card";
 
 function Modal(props){
     function hide(e){
-        if(e.target.id == 'modal'){
+        if(e.target.id === 'modal'){
             props.onModalHide()
         }
     }
